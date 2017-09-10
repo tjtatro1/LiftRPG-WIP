@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:theme="@style/PreferenceFixTheme.Light.DarkActionBar">
+
+    <SwitchPreference
+        android:key="weightunit"
+        android:title="Weight unit"
+        android:summaryOff="Pounds (lbs)"
+        android:summaryOn="Kilograms (kg)"
+        android:switchTextOff="kg"
+        android:switchTextOn="lbs"/>
+
+    <EditTextPreference
+        android:key="barweight"
+        android:title="Bar weight"
+        android:summary="45.0"
+        android:inputType="number"
+        android:defaultValue="45.0"/>
+
+    <MultiSelectListPreference
+        android:key="availableplates"
+        android:title="Available plates"
+        android:entries="@array/entries_available_plates"
+        android:entryValues="@array/entryvalues_available_plates"/>
+
+    <SwitchPreference
+        android:key="resttimer"
+        android:title="Rest timer"
+        android:defaultValue="true"
+        android:summaryOff="Disabled"
+        android:summaryOn="Enabled"/>
+
+</PreferenceScreen>

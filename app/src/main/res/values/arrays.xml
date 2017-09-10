@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="entries_available_plates">
+        <item>45 lbs/20 kg</item>
+        <item>35 lbs/15 kg</item>
+        <item>25 lbs/10 kg</item>
+        <item>10 lbs/5 kg</item>
+        <item>5 lbs/2.5 kg</item>
+        <item>2.5 lbs/1.25 kg</item>
+    </string-array>
+
+    <string-array name="entryvalues_available_plates">
+        <item>45 lbs/20 kg</item>
+        <item>35 lbs/15 kg</item>
+        <item>25 lbs/10 kg</item>
+        <item>10 lbs/5 kg</item>
+        <item>5 lbs/2.5 kg</item>
+        <item>2.5 lbs/1.25 kg</item>
+    </string-array>
+    
+</resources>

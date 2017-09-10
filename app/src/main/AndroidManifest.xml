@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.tatro.thomas.liftrpg">
+
+    <application
+        android:name="com.orm.SugarApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MaterialDrawerTheme.Light"
+        tools:replace="android:icon"
+        tools:node="replace">
+
+        <activity android:name=".activities.MainActivity"
+            android:theme="@style/PreferenceFixTheme.Light.NoActionBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.SessionActivity"
+            android:label="@string/workout_activity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/WorkoutActivityTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".activities.SettingsActivity"
+            android:label="@string/settings_activity"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/PreferenceTheme"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.tatro.thomas.liftrpg.TutorialIntro"
+            android:label="@string/tutorial_intro" />
+
+        <meta-data android:name="DATABASE" android:value="liftrpg.db" />
+        <meta-data android:name="VERSION" android:value="1" />
+        <meta-data android:name="QUERY_LOG" android:value="true" />
+        <meta-data android:name="DOMAIN_PACKAGE_NAME" android:value="com.tatro.thomas.liftrpg" />
+
+    </application>
+
+</manifest>

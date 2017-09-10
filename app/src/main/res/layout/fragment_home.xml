@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fab_home_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|end"
+            android:paddingBottom="16dp"
+            android:paddingEnd="16dp"
+            fab:menu_colorNormal="@color/colorAccent"
+            fab:menu_colorPressed="@color/colorAccentLight"
+            fab:menu_showShadow="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_menu_item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/scale"
+                fab:fab_colorNormal="@color/colorBlue"
+                fab:fab_colorPressed="@color/colorBlueLight"
+                fab:fab_size="mini"
+                fab:fab_label="@string/weigh_in" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/fab_menu_item2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/weightlifting"
+                fab:fab_size="mini"
+                fab:fab_label="@string/new_session" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- Main Content View -->
+        <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top|center"
+                android:paddingTop="24dp"
+                android:paddingBottom="16dp"
+                android:text="@string/lvl_0_tadpole"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimaryText"/>
+
+            <com.rey.material.widget.ProgressView
+                android:id="@+id/xp_bar_home"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginBottom="16dp"
+                app:pv_autostart="true"
+                app:pv_circular="false"
+                app:pv_progressStyle="@style/Material.Drawable.LinearProgress.Determinate"
+                app:pv_progressMode="determinate"
+                app:lpd_strokeColor="@color/colorAccent"
+                app:lpd_strokeSecondaryColor="@color/colorAccentLight"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="193dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="24dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="@string/last_session"
+                android:textSize="24sp"
+                android:textColor="@color/colorPrimaryText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="12dp"
+                android:paddingBottom="16dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Friday, 1 Jan - Workout C"
+                android:textSize="14sp"
+                android:textColor="@color/colorSecondaryText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Overhead Press"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Bench Press"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryText"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="12dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:text="Barbell Row"
+                android:textSize="14sp"
+                android:textColor="@color/colorPrimaryText"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>

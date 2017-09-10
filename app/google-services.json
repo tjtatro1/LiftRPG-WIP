@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "56365717436",
+    "project_id": "firebase-liftrpg"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56365717436:android:167c62f98ab47746",
+        "android_client_info": {
+          "package_name": "com.tatro.thomas.liftrpg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56365717436-poq1ujrfk7rhm8vuaor5emt61da55k9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tatro.thomas.liftrpg",
+            "certificate_hash": "fd3ae70f9d52137bb5621bb8f3afbfeb5e9d51f3"
+          }
+        },
+        {
+          "client_id": "56365717436-3h3mnib825ufli7t0h6esmt0ag88l3hk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRVLhGXwpCtJNtC6n4BOpPB7m3DVs4S3k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
